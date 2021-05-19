@@ -1,0 +1,171 @@
+/* Hide blue stripe on tab */
+.tab-line {
+  display: none !important;
+}
+
+/* Remove the 1px border on top of the tabs bar */
+#TabsToolbar {
+  margin-top: -1px !important;
+}
+
+#back-button, #back-button > .toolbarbutton-icon {
+  transform: scale(.95,.95) !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 0 0 0 !important;
+  box-shadow: none !important;
+}
+
+#back-button:hover > .toolbarbutton-icon {
+  background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+#pageActionButton {
+  display: none !important;
+}
+
+#pocket-button {
+  display: none !important;
+}
+
+#pageactionseparator {
+  display: none !important;
+}
+
+#nav-bar toolbarspring {
+  display: none !important;
+}
+
+#titlebar {
+  border: none !important;
+}
+
+#home-button {
+  display: none !important;
+}
+
+#PersonalToolbar {
+  display: none!important;
+}
+
+#sidebar-button {
+  display: none !important;
+}
+
+#library-button {
+  display: none !important;
+}
+
+#fxa-toolbar-menu-button {
+  display: none !important;
+}
+
+#PanelUI-button {
+  border: none !important;
+  margin-left: -5px !important;
+}
+
+#back-button {
+  margin-left: 5px !important;
+}
+
+.tabbrowser-tab::after {
+    opacity: 0 !important;
+    border-left: none !important;
+}
+
+#nav-bar {
+  box-shadow: none !important; /* disable tab/toolbar border */
+  border: none !important;
+}
+
+/* Set custom tab height */
+:root {
+  --my-custom-tab-height: 35px;
+  --tab-min-height: var(--my-custom-tab-height) !important;
+}
+:root #tabbrowser-tabs {
+  --tab-min-height: var(--my-custom-tab-height) !important;
+}
+
+/* Set custom colors */
+:root{
+  --my-custom-tab-bar-color:  rgb(230,232,237);
+  --my-custom-tool-bar-color: rgb(255,255,255);
+}
+
+.tab-background[selected="true"] {
+  /* active tab background color */
+  background-color: var(--my-custom-tool-bar-color) !important;
+}
+
+tab[selected="true"] {
+  /* active tab text color */
+  color: black !important;
+}
+
+tab:not([selected="true"]) {
+  /* inactive tab background color */
+  background: var(--my-custom-tab-bar-color) !important;
+  /* inactive tab text color */
+  color: black !important;
+  border: none !important;
+}
+
+tab:hover:not([selected="true"]) {
+  /* mouse focused inactive tab background color */
+  background: rgb(245,247,254) !important;
+  /* mouse focused inactive tan text color */
+  color: black !important;
+}
+
+#TabsToolbar > *{
+  /* tab bar color */
+  background-color: var(--my-custom-tab-bar-color) !important;
+}
+
+toolbar {
+  /* tool bar color */
+  background-color: var(--my-custom-tool-bar-color) !important;
+}
+
+
+/* Disable large address bar */
+#urlbar[breakout][breakout-extend] {
+    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+    height: var(--urlbar-height) !important;
+    padding-block: 0 !important;
+    padding-inline: 0 !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+    animation-name: none !important;
+}
+
+#urlbar-background {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  border: none !important;
+  /* border-bottom: 1px solid var(--my-custom-tab-bar-color) !important; */
+  background-color: var(--my-custom-tool-bar-color) !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  border: 1px solid var(--my-custom-tab-bar-color) !important;
+  background-color: var(--my-custom-tool-bar-color) !important;
+}
+
+:root{
+  scrollbar-width: none !important;
+}
+
+@-moz-document url(about:privatebrowsing) {
+  :root{
+    scrollbar-width: none !important;
+  }
+}
