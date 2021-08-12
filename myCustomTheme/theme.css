@@ -101,8 +101,6 @@
 .tab-background[selected="true"] {
   /* active tab background color */
   background-color: var(--my-custom-tool-bar-color) !important;
-  margin-bottom: 0 !important;
-  border-radius: 0 !important;
 }
 
 .tab-background {
@@ -111,7 +109,7 @@
 }
 
 .tabbrowser-tab {
-  padding-left:  0 !important;
+  padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
