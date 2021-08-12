@@ -151,7 +151,7 @@ toolbar {
     width: 100% !important;
 }
 
-#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+#urlbar > #urlbar-input-container {
     height: var(--urlbar-height) !important;
     padding-block: 0 !important;
     padding-inline: 0 !important;
