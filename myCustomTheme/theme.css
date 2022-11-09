@@ -74,8 +74,18 @@
 }
 
 .tabbrowser-tab::after {
-    opacity: 0 !important;
-    border-left: none !important;
+  opacity: 0 !important;
+  border-left: none !important;
+}
+
+#firefox-view-button {
+  display: none !important;
+}
+
+#tabbrowser-tabs {
+  border-left-width: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 #nav-bar {
