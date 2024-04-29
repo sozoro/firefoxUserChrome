@@ -62,7 +62,7 @@
           environment = {
             systemPackages                = [ pkgs."${self.name}" ];
             etc."${etcFirefoxChromePath}" = {
-              source = ./firefoxUserChrome;
+              source = ".";
             };
           };
         };
